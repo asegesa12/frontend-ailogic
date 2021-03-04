@@ -7,23 +7,26 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
 
 
+
+import { RecuperarClaveComponent } from './components/recuperar-clave/recuperar-clave.component';
+import { RecuperarCuentaComponent } from './components/recuperar-cuenta/recuperar-cuenta.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     FormularioComponent,
-    SidebarComponent
+    SidebarComponent,
+    RecuperarClaveComponent,
+    RecuperarCuentaComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSidenavModule,
-    MatListModule,
     FormsModule
     
 
