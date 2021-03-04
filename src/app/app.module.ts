@@ -13,6 +13,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RecuperarClaveComponent } from './components/recuperar-clave/recuperar-clave.component';
 import { RecuperarCuentaComponent } from './components/recuperar-cuenta/recuperar-cuenta.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SidebarComponent,
     RecuperarClaveComponent,
     RecuperarCuentaComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
