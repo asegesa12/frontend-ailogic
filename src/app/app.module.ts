@@ -19,6 +19,7 @@ import { AsignacionSubidaComponent } from './components/asignacion-subida/asigna
 import { ListaPasantesComponent } from './components/lista-pasantes/lista-pasantes.component';
 import { SolicitudesComponent } from './components/solicitudes/solicitudes.component';
 import { PasantiaConfigComponent } from './components/pasantia-config/pasantia-config.component';
+import { PasanteHomeComponent } from './components/pasante-home/pasante-home.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PasantiaConfigComponent } from './components/pasantia-config/pasantia-c
     AsignacionSubidaComponent,
     ListaPasantesComponent,
     SolicitudesComponent,
-    PasantiaConfigComponent
+    PasantiaConfigComponent,
+    PasanteHomeComponent
   ],
   imports: [
     BrowserModule,
