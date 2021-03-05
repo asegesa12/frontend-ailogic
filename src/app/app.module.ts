@@ -20,6 +20,11 @@ import { ListaPasantesComponent } from './components/lista-pasantes/lista-pasant
 import { SolicitudesComponent } from './components/solicitudes/solicitudes.component';
 import { PasantiaConfigComponent } from './components/pasantia-config/pasantia-config.component';
 import { PasanteHomeComponent } from './components/pasante-home/pasante-home.component';
+import { PasanteSubirAsigComponent } from './components/pasante-subir-asig/pasante-subir-asig.component';
+import { PasanteCalificacionesComponent } from './components/pasante-calificaciones/pasante-calificaciones.component';
+import { PasanteRepoComponent } from './components/pasante-repo/pasante-repo.component';
+import { PasanteRepoVistaComponent } from './components/pasante-repo-vista/pasante-repo-vista.component';
+import { PasantePerfilComponent } from './components/pasante-perfil/pasante-perfil.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,12 @@ import { PasanteHomeComponent } from './components/pasante-home/pasante-home.com
     ListaPasantesComponent,
     SolicitudesComponent,
     PasantiaConfigComponent,
-    PasanteHomeComponent
+    PasanteHomeComponent,
+    PasanteSubirAsigComponent,
+    PasanteCalificacionesComponent,
+    PasanteRepoComponent,
+    PasanteRepoVistaComponent,
+    PasantePerfilComponent
   ],
   imports: [
     BrowserModule,
