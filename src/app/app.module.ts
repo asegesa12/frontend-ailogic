@@ -13,6 +13,12 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RecuperarClaveComponent } from './components/recuperar-clave/recuperar-clave.component';
 import { RecuperarCuentaComponent } from './components/recuperar-cuenta/recuperar-cuenta.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { PasantiaAsignacionComponent } from './components/pasantia-asignacion/pasantia-asignacion.component';
+import { AsignacionSubidaComponent } from './components/asignacion-subida/asignacion-subida.component';
+import { ListaPasantesComponent } from './components/lista-pasantes/lista-pasantes.component';
+import { SolicitudesComponent } from './components/solicitudes/solicitudes.component';
+import { PasantiaConfigComponent } from './components/pasantia-config/pasantia-config.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SidebarComponent,
     RecuperarClaveComponent,
     RecuperarCuentaComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminComponent,
+    PasantiaAsignacionComponent,
+    AsignacionSubidaComponent,
+    ListaPasantesComponent,
+    SolicitudesComponent,
+    PasantiaConfigComponent
   ],
   imports: [
     BrowserModule,
