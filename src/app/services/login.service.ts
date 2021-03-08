@@ -22,24 +22,16 @@ export class LoginService {
     return this.http.post<any>(this.URL ,AuthUser);
   }
 
-  
-  private readToken() {
-    let token = localStorage.getItem('token');
-    if( token && token != 'undefined'){
-      this.userToken = token;
-    } else {
-      this.userToken = '';
+  Loggeado(){
+    if(localStorage.getItem('token') != null){
+      return true
     }
-    return this.userToken
   }
-
-  private saveToken(idToken: string){
-    this.userToken = idToken;
-    localStorage.setItem('token',idToken);
-    
-    const today = new Date();
-    today.setSeconds(3600);
-    localStorage.setItem('expire', today.getDate().toString());
-
+  Logout(){
+    if(window.confirm('Desea cerrar la session??')){
+      localStorage.removeItem('token')
+      this.router.navigate(['/'])
+    }
   }
+  
 }

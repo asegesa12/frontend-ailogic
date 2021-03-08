@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
   login(form: NgForm) {
     this.Auth.login(this.Usuario).subscribe(resp => {
       localStorage.setItem('token',resp['token'])
-          console.log(resp['token'])
+         
     })
     
   }
