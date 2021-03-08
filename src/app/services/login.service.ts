@@ -10,28 +10,31 @@ import { User } from '../models/user';
 export class LoginService {
   private userToken: string = "";
 
-  constructor(private http: HttpClient,private router:Router,) { }
+  constructor(private http: HttpClient, private router: Router,) { }
 
 
-  URL:string = "https://internshipailogic.azurewebsites.net/api/Auth/login"
+  URL: string = "https://internshipailogic.azurewebsites.net/api/Auth/login"
 
 
-  login(User:User) {
-    const AuthUser = {email:User.email,password:User.password}
+  login(User: User) {
+    const AuthUser = { email: User.email, password: User.password }
    
-    return this.http.post<any>(this.URL ,AuthUser);
+    return this.http.post<any>(this.URL, AuthUser);
   }
 
-  Loggeado(){
-    if(localStorage.getItem('token') != null){
+  Loggeado() {
+    if (localStorage.getItem('token') != null) {
       return true
     }
-  }
-  Logout(){
-    if(window.confirm('Desea cerrar la session??')){
-      localStorage.removeItem('token')
-      this.router.navigate(['/'])
+    else {
+      return false
     }
   }
   
+  Logout(){
+    if(window.confirm('Desea cerrar la session??')){
+      localStorage.removeItem('token')
+      this.router.navigate(['/login'])
+    }
+  }
 }

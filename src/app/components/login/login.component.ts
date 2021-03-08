@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../services/login.service';
 import { User } from '../../models/user';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
     email: "",
     password: ""
   }
-  constructor(private Auth:LoginService) { }
+  constructor(private Auth: LoginService,
+  private router :Router) { }
 
   
   ngOnInit() {
@@ -31,7 +33,8 @@ export class LoginComponent implements OnInit {
     
   login(form: NgForm) {
     this.Auth.login(this.Usuario).subscribe(resp => {
-      localStorage.setItem('token',resp['token'])
+      localStorage.setItem('token', resp['token'])
+      this.router.navigate(['recuperar-cuenta'])
          
     })
     
