@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
   login(form: NgForm) {
     this.Auth.login(this.Usuario).subscribe(resp => {
       localStorage.setItem('token', resp['token'])
-      this.router.navigate(['recuperar-cuenta'])
+      this.router.navigate(['/recuperar-cuenta'])
          
     })
     
