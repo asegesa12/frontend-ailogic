@@ -19,6 +19,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RecuperarClaveComponent } from './components/recuperar-clave/recuperar-clave.component';
 import { RecuperarCuentaComponent } from './components/recuperar-cuenta/recuperar-cuenta.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
 import { AdminComponent } from './components/admin/admin.component';
 import { PasantiaAsignacionComponent } from './components/pasantia-asignacion/pasantia-asignacion.component';
 import { AsignacionSubidaComponent } from './components/asignacion-subida/asignacion-subida.component';
@@ -32,6 +35,7 @@ import { PasanteRepoComponent } from './components/pasante-repo/pasante-repo.com
 import { PasanteRepoVistaComponent } from './components/pasante-repo-vista/pasante-repo-vista.component';
 import { PasantePerfilComponent } from './components/pasante-perfil/pasante-perfil.component';
 import { DndDirective } from './dnd.directive';
+
 
 
 
@@ -74,6 +78,7 @@ import { DndDirective } from './dnd.directive';
     MatButtonModule,  
     MatCardModule,  
     MatProgressBarModule 
+
     
 
   ],

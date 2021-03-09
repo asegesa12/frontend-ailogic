@@ -16,29 +16,30 @@
     <div class="login">
         <div class="form text-center mt-5">
             <div class="mt-4">
-                <a href="../Main/index.html"><img src="../../../assets/logo.svg">
+                <a href="/login"><img src="../../../assets/logo.svg">
                 </a>
                 <div class=" d-flex justify-content-center mt-3 ">
-                    <form class="col-6">
+                    <form (ngSubmit)="login( f )" #f="ngForm" class="col-6">
+
                         <div class="form-group inputWithIcon">
                             <span><i class="fas fa-user"></i></span>
-                            <input type="email" class="form-control form-control-lg" id="correo" aria-describedby="emailHelp" placeholder="Correo Electronico">
+                            <input type="email" [(ngModel)]="Usuario.email" name="email" class="form-control form-control-lg" id="email" aria-describedby="emailHelp" placeholder="Correo Electronico">
                         </div>
                         <div class="form-group inputWithIcon">
                             <span><i class="fas fa-lock"></i></span>
-                            <input type="password" class="form-control form-control-lg" id="contra" placeholder="Contraseña">
+                            <input type="password" [(ngModel)]="Usuario.password" name="password" id="password" class="form-control form-control-lg" placeholder="Contraseña">
                         </div>
                         <div class="mt-2 mr-3">
                             <a class="text-decoration-none" href="">
                                 <div class="d-inline">
                                     <img src="../../../assets/chechmarl.svg" alt="">
                                 </div>
-                                <p class="d-inline mt-3">Recordar contraseña</p>
+                                <p class="d-inline mt-3">Recordar contraseña<a routerLink="/recuperar-clave"> Haz click aqui</a> </p>
                             </a>
                         </div>
                         <div class=" d-flex justify-content-center mt-2 ">
 
-                            <button type="button" class=" button btn btn-primary custom-btn  shadow-lg" onclick="Login()">Iniciar sesion</button>
+                            <button type="submit" class=" button btn btn-primary custom-btn  shadow-lg">Iniciar sesion</button>
                             <p></p>
 
                         </div>
@@ -48,7 +49,7 @@
 
                 <div class=" d-flex justify-content-center mt-3 ">
 
-                    <p>¿Olvidates tu contraseña? <a href="recuperarcuenta.html">Haz click aqui</a> </p>
+                    <p>¿Olvidates tu contraseña? <a routerLink="/recuperar-cuenta">Haz click aqui</a> </p>
                 </div>
             </div>
             <div class="vector   position-absolute bottom-0 start-0">
