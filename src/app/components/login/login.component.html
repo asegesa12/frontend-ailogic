@@ -16,7 +16,7 @@
     <div class="login">
         <div class="form text-center mt-5">
             <div class="mt-4">
-                <a href="../Main/index.html"><img src="../../../assets/logo.svg">
+                <a href="/login"><img src="../../../assets/logo.svg">
                 </a>
                 <div class=" d-flex justify-content-center mt-3 ">
                     <form (ngSubmit)="login( f )" #f="ngForm" class="col-6">
@@ -34,7 +34,7 @@
                                 <div class="d-inline">
                                     <img src="../../../assets/chechmarl.svg" alt="">
                                 </div>
-                                <p class="d-inline mt-3">Recordar contraseña</p>
+                                <p class="d-inline mt-3">Recordar contraseña<a routerLink="/recuperar-clave"> Haz click aqui</a> </p>
                             </a>
                         </div>
                         <div class=" d-flex justify-content-center mt-2 ">
@@ -49,7 +49,7 @@
 
                 <div class=" d-flex justify-content-center mt-3 ">
 
-                    <p>¿Olvidates tu contraseña? <a href="recuperarcuenta.html">Haz click aqui</a> </p>
+                    <p>¿Olvidates tu contraseña? <a routerLink="/recuperar-cuenta">Haz click aqui</a> </p>
                 </div>
             </div>
             <div class="vector   position-absolute bottom-0 start-0">
